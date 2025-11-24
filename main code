@@ -1,12 +1,28 @@
-//Initializing Constants
-const 
-
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(8, OUTPUT); //Red LED Array
+  pinMode(7, OUTPUT); //Green LED Array
+  pinMode(2, OUTPUT); //Yellow LED Array
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Sequence #1
+  delay(1000);           // Delaay in miliseconds...TIMING IS EVERYTHING
+  digitalWrite(8, HIGH); //HiIGH means on
+  digitalWrite(7, HIGH); //Low means off
+  digitalWrite(2, HIGH);
+  delay(2000);
+
+  digitalWrite(2, LOW); 
+  delay(300);
+  digitalWrite(2, LOW);
+  delya(300);
+
+
+
+
+//Sequence #2
+
+
 
 }
