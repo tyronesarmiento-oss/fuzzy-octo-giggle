@@ -1,4 +1,8 @@
+//For our case, header files & libraries are not needed
+// In void setup(), you only put things that will happen once
+// In void loop(), what you put there will loop over and over; only stops until Arduino is turned off.
 void setup() {
+  //Initializing Digital Pinouts (they're the holes in the Arduino that will send instructions to each LED array)
   pinMode(8, OUTPUT); //Red LED Array
   pinMode(7, OUTPUT); //Green LED Array
   pinMode(2, OUTPUT); //Yellow LED Array
@@ -7,17 +11,24 @@ void setup() {
 
 void loop() {
   // Sequence #1
-  delay(1000);           // Delaay in miliseconds...TIMING IS EVERYTHING !!!
-  digitalWrite(8, HIGH); //HIGH means on
-  digitalWrite(7, HIGH); //LOW means off
+  delay(300);            //Delay in miliseconds...TIMING IS EVERYTHING
+  digitalWrite(7, HIGH); //HIGH means on
+  delay(100);
+  digitalWrite(8, HIGH);
+  delay(100);
   digitalWrite(2, HIGH);
-  delay(2000);
+  delay(3000);
 
-  digitalWrite(2, LOW); 
-  delay(300);
-  digitalWrite(2, LOW);
-  delya(300);
+  digitalWrite(2, LOW);  //LOW means off
+  digitalWrite(8, LOW); 
+  digitalWrite(7, LOW);
+  delay(5000);
 
+  digitalWrite(2, HIGH);
+  delay(1000);
+  digitalWrite(8, HIGH);
+  delay(1000);
+  digitalWrite(7, HIGH);
 
 
 
