@@ -7,9 +7,9 @@ void setup() {
 
 void loop() {
   // Sequence #1
-  delay(1000);           // Delaay in miliseconds...TIMING IS EVERYTHING
-  digitalWrite(8, HIGH); //HiIGH means on
-  digitalWrite(7, HIGH); //Low means off
+  delay(1000);           // Delaay in miliseconds...TIMING IS EVERYTHING !!!
+  digitalWrite(8, HIGH); //HIGH means on
+  digitalWrite(7, HIGH); //LOW means off
   digitalWrite(2, HIGH);
   delay(2000);
 
